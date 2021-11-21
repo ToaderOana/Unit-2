@@ -1,0 +1,128 @@
+<style>
+title{
+	
+}
+body{
+	background:white;
+}
+h1{
+	color:GrayText;
+	border-collapse: collapse;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+	background-color: orange;
+	text-align: left;
+	font-family: arial;
+	text-shadow: 3px 3px 6px gray;
+	font-size:50px;
+}
+p{
+	color:blue;
+	font-size:30px;
+}
+table,tr, th, td {
+  border-color:gray;
+  border-collapse: collapse;
+  border-style:double;
+  color: black;
+  font-size:30px;
+  text-align: center;
+  
+}
+h3{
+	color:black;
+	border-style:solid;
+	border-collapse:collapse;
+	border-color:red;
+	border-width:3px;
+	background: lightblue;
+	
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: black;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.mySlides,
+.numbertext{
+	text-align:center;
+}
+
+.container{
+	background:darkgray;
+}
+</style>

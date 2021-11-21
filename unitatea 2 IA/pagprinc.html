@@ -1,0 +1,149 @@
+<html>
+<head>
+	<title> Unit 2 </title>
+	<link rel="stylesheet" href="style.css">
+<script>
+	
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+</head>
+<body>
+	<h1> Toader Oana - Daiana</h1>
+	<h2> <a href="https://www.utcluj.ro/">Oana@utcluj.ro</a>
+	<p><u> Specificatii tehnice ale statiei principale de lucru </u></p>
+	<table>
+	<tr>
+	<tr>
+		<th>Denumire componenta</th>
+		<th>Parametri</th>
+		<th>Producator</th>
+	</tr>
+	<tr>
+		<td>Procesor</td>
+		<td>Frecventa nominala de 2.4 GHz</td>
+		<td>Intel®</td>
+	</tr>
+	<tr>
+		<td>Placa de baza</td>
+		<td> Video integrat Intel® HD Graphics </td>
+		<td> AMD </td>
+	</tr>
+	<tr>
+		<td>Placa video</td>
+		<td>Tip placa video integrata</td>
+		<td>Intel Iris Xe</td>
+	</tr>
+	</tr>
+	</table>
+<h3 id="poz">
+	<p><u>Structura retelei personale si accesul la internet</u></p>
+	<img src="diagrama.png"  >
+	<p><u>Caracteristicile conexiunii la retea</u></p>
+	<ol>
+		<li> Adresa MAC
+			<p>BC-17-B8-C2-EC-37</p>
+		<li> Adresa IP
+			<p><img src="AdresaIP.png" width="370" height="400"></p>
+		<li> Debit la download
+		<p>41.51 Mbps</p>
+		<li> Debit la upload
+		<p>47.74 Mpbs</p>
+	</ul>
+</h3>
+
+<p><u><b> Utilizarea resurselor </b></u></p>
+
+
+<div class="container">
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="poza1.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="poza2.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="poza3.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="poza4.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="poza5.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="poza6.jpg" style="width:50%">
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="poza1.jpg" style="width:50%" onclick="currentSlide(1)" alt="Utilizarea resurselor ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="poza2.jpg" style="width:50%" onclick="currentSlide(2)" alt="Utilizarea resurselor ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="poza3.jpg" style="width:50%" onclick="currentSlide(3)" alt="Utilizarea resurselor ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="poza4.jpg" style="width:50%" onclick="currentSlide(4)" alt="Utilizarea resurselor ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="poza5.jpg" style="width:50%" onclick="currentSlide(5)" alt="Utilizarea resurselor ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="poza6.jpg" style="width:50%" onclick="currentSlide(6)" alt="Utilizarea resurselor ">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
